@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Classification Homepage</title>
+    <!-- Add your CSS stylesheets and JavaScript files here -->
+    <link rel="stylesheet" href="home.css">
+    <script src="home1.js" defer></script>
+</head>
+<body bgcolor="bisque">
+    <header>
+        <nav>
+            <div class="logo">C&C</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="login">
+                <a href="#">Login</a> / <a href="#">Sign up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="image-slider" class="image-slider">
+            <!-- Add image slider content here -->
+            <div class="slide">
+                <img src="images/ar_img1.jpg" alt="Music Genre 1">
+                
+            </div>
+            <div class="slide">
+                <img src="images/ani_img.jpg" alt="Music Genre 2">
+                
+            </div>
+            <div class="slide">
+                <img src="images/adhi_img.jpg" alt="Music Genre 3">
+                
+            </div>
+            <div class="slide">
+                <img src="images/u1_img.jpg" alt="Music Genre 4">
+                
+            </div>
+            <!-- Add more slides as needed -->  
+        </section>
+
+        <section id="features" class="features">
+            <!-- Features section content here -->
+            <div class="feature">
+                <!-- Add onclick function to this image -->
+                <img src="images/classify.png" alt="Feature 1" onclick="featureClicked('Classification based on directors')">
+                <h3>Classification based on directors</h3>
+                
+            </div>
+            <div class="feature">
+                <!-- Add onclick function to this image -->
+                <img src="images/cluster.png" alt="Feature 2" onclick="featureClicked('Clustering of similar Songs')">
+                <h3>Clustering of similar Songs</h3>
+                
+            </div>
+            <!-- Add more features as needed -->
+        </section>
+
+        <section id="contact" class="contact">
+            <!-- Contact section content here -->
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, feel free to contact us using the information below:</p>
+            <ul>
+                <li>Email: music@gmail.com</li>
+                <li>Phone: 123-456-7890</li>
+                <li>Address: 123 Music Street,music City,music Country</li>
+            </ul>
+            <!-- Add a contact form here if needed -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 clustering application. All rights reserved.</p>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript function to handle feature image click event
+        function featureClicked(featureName) {
+            alert("You clicked on: " + featureName);
+            // You can add additional actions here, such as opening a modal or navigating to another page
+        }
+    </script>
+</body>
+</html>
